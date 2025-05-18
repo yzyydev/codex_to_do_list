@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { Button, Input, Label } from "@/components/ui";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -24,23 +25,21 @@ export default function LoginPage() {
         className="flex flex-col gap-4 bg-white text-black p-8 rounded shadow-md w-full max-w-sm"
       >
         <h1 className="text-2xl font-bold text-center">Login</h1>
-        <input
+        <Label htmlFor="username">Username</Label>
+        <Input
+          id="username"
           type="text"
-          placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-className="border border-black px-3 py-2 rounded"
         />
-        <input
+        <Label htmlFor="password">Password</Label>
+        <Input
+          id="password"
           type="password"
-          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="border border-black px-3 py-2 rounded"
         />
-        <button type="submit" className="bg-foreground text-background px-3 py-2 rounded">
-          Login
-        </button>
+        <Button type="submit">Login</Button>
       </form>
     </div>
   );
