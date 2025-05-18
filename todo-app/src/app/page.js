@@ -29,14 +29,14 @@ export default function LoginPage() {
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="border border-gray-400 px-3 py-2 rounded"
+className="border border-black px-3 py-2 rounded"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="border border-gray-400 px-3 py-2 rounded"
+          className="border border-black px-3 py-2 rounded"
         />
         <button type="submit" className="bg-foreground text-background px-3 py-2 rounded">
           Login

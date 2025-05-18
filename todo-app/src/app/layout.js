@@ -1,4 +1,5 @@
 import "./globals.css";
+import { TodoProvider } from "./providers";
 
 export const metadata = {
   title: "NextJS To Do List App",
@@ -9,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <TodoProvider>{children}</TodoProvider>
       </body>
     </html>
   );
