@@ -9,6 +9,7 @@ const variants = {
 
 const sizes = {
   default: 'h-10 px-4 py-2',
+  sm: 'h-8 px-3 py-1',
 };
 
 export const Button = React.forwardRef(
