@@ -11,6 +11,7 @@
 - Abilitiy to Mark To Dos as Done
 - Abilitiy to Unmark To Dos as Done
 - Abilitiy to Mark To Dos as Important
+- Responsive Design
 
 # Tech Stack
 
